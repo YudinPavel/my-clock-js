@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock</title>
+    <link href = "Clock.css" rel="stylesheet">
+</head>
+<body>
+
+  <input type="checkbox" id="check-timer">
+
+  <div class="clock">
+
+    <clock id="time">Здесь должно быть время...</clock>
+    
+    <label for="check-timer">
+      <div>
+        <a class="btn">Stopwatch</a> <!--Либо якорная ссылка(href="#top"), либо чекбокс-->      
+      </div>  
+    </label>
+    
+    <div class="dropdown">
+      <div class="arrow-dropdown"></div>
+      <ul class="dropdown-content">
+        <li>
+          <a>One</a>
+        </li>
+        <li>
+          <a>Two</a>
+        </li>
+        <li>
+          <a>Three</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="btn-down">
+      <a class="btn" href="#top">Down</a>
+      <span class="arrow-down"></span>
+    </div>
+
+  </div>
+
+  <div class="timer">
+    <!-- <div class="form">
+      <div class="menu-form">
+        <div class="arrow-form"></div>
+      </div>
+      <input type="text" class="input-form">
+    </div> -->
+    <clock>00:00:00:00</clock>
+    <div>
+      <a class="btn" name="top">Play</a>
+      <a class="btn">Stop</a>
+      <a class="btn">Pause</a>
+    </div>
+    <label for="check-timer">
+      <div class="btn-up">
+        <span class="arrow-up"></span>
+        <a class = "btn">Up</a> <!--Либо якорная ссылка(href="#time"), либо чекбокс-->        
+      </div>
+    </label>
+  </div>
+  
+  <script src = "Clock.js"></script>
+
+</body>
+</html>
